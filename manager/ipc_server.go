@@ -528,7 +528,7 @@ func IPCServerNotifyTunnelsChange() {
 }
 
 func IPCServerNotifyUpdateFound(state UpdateState) {
-	notifyAll(UpdateFoundNotificationType, true, state)
+	notifyAll(UpdateFoundNotificationType, false, state)
 }
 
 func IPCServerNotifyUpdateProgress(dp updater.DownloadProgress) {
